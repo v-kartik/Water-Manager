@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Others.Details">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Enter The Details"
+            android:id="@+id/txt2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="40dp"
+        ></TextView>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:id="@+id/id_text"
+        android:singleLine="true"
+        android:textColorHint="@color/white"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:hint="UNIQUE ID"
+        android:gravity="center"
+        ></com.google.android.material.textfield.TextInputEditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Enter the levels you want alert about below (In Percent):-"
+            android:textColor="@color/white"
+            android:layout_below="@+id/id_text"
+            android:layout_margin="20dp"
+            android:id="@+id/txt1"
+            android:textSize="25dp"
+            >
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:id="@+id/level1"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:hint="Level 1"
+            android:gravity="center"
+            ></com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/level1"
+            android:id="@+id/level2"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:hint="Level 2"
+            android:gravity="center"
+            ></com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/level2"
+            android:id="@+id/level3"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:hint="Level 3"
+            android:gravity="center"
+            ></com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/level4"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:layout_margin="20dp"
+            android:layout_below="@id/level3"
+            android:textColor="@color/white"
+            android:hint="Level 4"
+            android:gravity="center"
+            ></com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/level5"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/level4"
+            android:hint="Level 5"
+            android:gravity="center"
+            ></com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/submit"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_below="@+id/level5"
+            android:layout_margin="20dp"
+            app:cornerRadius="50dp"
+            ></com.google.android.material.button.MaterialButton>
+    </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

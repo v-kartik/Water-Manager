@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Others.WaterLevel">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#243135"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/volume"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:text="Total Water (in Liters)"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:padding="15dp"
+    ></TextView>
+    <com.ramijemli.percentagechartview.PercentageChartView
+        android:id="@+id/percentView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:pcv_mode="fill"
+        android:layout_gravity="center"
+        app:pcv_orientation="clockwise"
+        app:pcv_startAngle="90"
+        app:pcv_progressColor="#31cbff"
+        app:pcv_backgroundColor="#14556c"
+        app:pcv_textSize="50dp"
+        app:pcv_backgroundOffset="70dp"
+
+    ></com.ramijemli.percentagechartview.PercentageChartView>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/showLevel"
+        android:text="Display"
+        android:layout_gravity="bottom"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+        ></com.google.android.material.button.MaterialButton>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="welcome"
+        android:layout_margin="50dp"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:textSize="50dp"
+        android:id="@+id/welcome"
+        >
+
+    </TextView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/turnOn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="Turn Motor on"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/welcome"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+    ></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/turnOff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="Turn Motor off"
+        android:layout_below="@+id/turnOn"
+        android:layout_margin="10dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+    ></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signOut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="SignOut"
+        android:layout_below="@id/config"
+        android:layout_margin="10dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+    ></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toShow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="Statistics"
+        android:layout_below="@id/crLevel"
+        android:layout_margin="10dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+        ></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/config"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="Configure"
+        android:layout_below="@id/toShow"
+        android:layout_margin="10dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+        ></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/crLevel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="Current level"
+        android:layout_below="@id/turnOff"
+        android:layout_margin="10dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+    ></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="Details"
+        android:layout_below="@id/signOut"
+        android:layout_margin="10dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/dark_blue"
+        ></com.google.android.material.button.MaterialButton>
+
+
+</RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

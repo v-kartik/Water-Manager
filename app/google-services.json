@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449754179533",
+    "firebase_url": "https://water-manager-bc941.firebaseio.com",
+    "project_id": "water-manager-bc941",
+    "storage_bucket": "water-manager-bc941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449754179533:android:1dddb6b48c2443e61a4684",
+        "android_client_info": {
+          "package_name": "com.example.watermanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449754179533-804k6ueah6hbifn8k5uprior5e8goer6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAldMmDa1liO1avC3ShOWDSQ0vPJAHPu5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449754179533-804k6ueah6hbifn8k5uprior5e8goer6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.LoginActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+    >
+
+
+        <ProgressBar
+            android:id="@+id/pBarSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            ></ProgressBar>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="147dp"
+            android:layout_marginBottom="81dp"
+            android:padding="30dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="50dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_margin="7dp"
+            android:padding="7dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:hint="Email"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:textColorHint="#ffffff"
+            android:inputType="textEmailAddress"
+            ></com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/email_text"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:backgroundTint="#00213c"
+            android:singleLine="true"
+            android:textColorHint="#ffffff"
+            android:inputType="textPassword"
+
+        ></com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="login"
+            android:textAllCaps="true"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/password_text"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#00213c"
+
+        ></com.google.android.material.button.MaterialButton>
+        <TextView
+            android:id="@+id/toSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Don't have an account? Sign Up"
+            android:layout_margin="7dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            ></TextView>
+    </RelativeLayout>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
