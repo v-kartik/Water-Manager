@@ -82,11 +82,11 @@ public class Details extends AppCompatActivity implements View.OnClickListener{
         String l4 = level4.getText().toString();
         String l5 = level5.getText().toString();
 
-        if(l1.isEmpty()) l1 = "-1";
-        if(l2.isEmpty()) l2 = "-1";
-        if(l3.isEmpty()) l3 = "-1";
-        if(l4.isEmpty()) l4 = "-1";
-        if(l5.isEmpty()) l5 = "-1";
+        if(l1.isEmpty()) l1 = "500";
+        if(l2.isEmpty()) l2 = "500";
+        if(l3.isEmpty()) l3 = "500";
+        if(l4.isEmpty()) l4 = "500";
+        if(l5.isEmpty()) l5 = "500";
 
         for(int i = 0; i<key.length(); i++){
             if(key.charAt(i) == '.' || key.charAt(i) == '#' || key.charAt(i) == '@'){
